@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css">
+<title>NGO Login & Register</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="bgVideo">
+    <source src="https://videos.pexels.com/video-files/8419548/8419548-hd_1080_1080_30fps.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<div class="content">
+    <h1>Welcome to Our NGO</h1>
+    <p>Join us to make a difference</p>
+</div>
+<div class="container" id="container">
+    <div class="section login-section">
+    <form id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <div id="loginEmailError" class="error"></div>
+
+        <input type="password" id="loginPassword" placeholder="Password">
+        <div id="loginPasswordError" class="error"></div>
+
+        <button type="submit">Login</button>
+        <div id="loginSuccess" class="success"></div>
+        <div class="forgot" onclick="forgotPassword()">Forgot Password?</div>
+
+        <div class="toggle" onclick="showRegister()">Don't have an account? Register</div>
+    </form>
+    </div>
+
+    <!-- Register Section -->
+    <div class="section register-section">
+    <form id="registerForm">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Full Name">
+<div id="nameError" class="error"></div>
+
+<input type="email" id="email" placeholder="Email">
+<div id="emailError" class="error"></div>
+
+<input type="text" id="phone" placeholder="Phone Number">
+<div id="phoneError" class="error"></div>
+
+<input type="password" id="password" placeholder="Password">
+<div id="passwordError" class="error"></div>
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
+<div id="confirmPasswordError" class="error"></div>
+
+<button type="submit">Register</button>
+<div id="registerSuccess" class="success"></div>
+
+    <div class="toggle" onclick="showLogin()">Already have an account? Login</div>
+</form>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
